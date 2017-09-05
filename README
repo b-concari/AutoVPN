@@ -1,7 +1,9 @@
 To use this script, you must be using the Cisco AnyConnect VPN client, as well as the Symantec VIP Access utility for two-factor authentication.
 
 1. Open the script file in Script Editor (Utilities > Script Editor). Export the script as an application, making sure to uncheck all the checkboxes, and copy the application into the Applications or Utilities folder.
-1. Setup a new entry, "cisco_vpn", in the login keychain. This entry should be an application password, the password should be your VPN password, and the username/account can be anything. (Utilities > Keychain)
-2. Add the application to the Accessibility tab under System Preferences > Security & Privacy > Privacy > Accessibility.
+
+2. Setup a new entry, "cisco_vpn", in the login keychain. This entry should be an application password, the password should be your VPN password, and the username/account can be anything. (Utilities > Keychain)
+
+3. Add the application to the Accessibility tab under System Preferences > Security & Privacy > Privacy > Accessibility.
 
 When you run the script/application, it should start Cisco AnyConnect and login to the default server using the password you setup in the keychain. It will then spawn the VIP Access app and move it to the top-left corner of the screen so that it can click the "copy security code" button. It will then paste the security key into the second Cisco AnyConnect screen, then hit the return key, which will finalize the VPN connection.
